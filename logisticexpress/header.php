@@ -49,14 +49,7 @@
                                     <li><a href="mailto:support@pentagoncargoshippingcourierservice.com">Email: support@pentagoncargoshippingcourierservice.com</a></li>
                                 </ul>
                             </div>
-                            <div class="header-info-right">
-                                <ul class="header-social">    
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -78,8 +71,9 @@
                                         <ul id="navigation">                                                                                          
                                             <li><a href="/">Home</a></li>
                                             <li><a href="about.php">About</a></li>
+                                            <li><a href="track.php">Track</a></li>
                                             <li><a href="services.php">Services</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="contact.php">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>

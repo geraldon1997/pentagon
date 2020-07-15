@@ -32,9 +32,9 @@
                                 <span>About Our Company</span>
                                 <h2>Safe Logistic & Transport  Solutions That Saves our Valuable Time!</h2>
                             </div>
-                            <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
-                            <p>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
-                            <a href="about.html" class="btn">More About Us</a>
+                            <p>Pentagon Cargo Shipping Courier Service invented express distribution and is the industry’s global leader, providing rapid, reliable, time-definite delivery to more than 220 countries and territories.</p>
+                            <p>We are an international team of over 3,800 shipping professionals, united by a passion for logistics. And we work in a unique environment. PCSCS is as innovative as a start-up, with the power of an international organization.</p>
+                            
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -72,16 +72,8 @@
                                 <img src="assets/img/gallery/team1.png" alt="">
                                 <div class="team-caption">
                                     <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <p>CEO</p>
+                                    
                                 </div>
                              </div>
                         </div>
@@ -91,17 +83,9 @@
                             <div class="team-img">
                                 <img src="assets/img/gallery/team2.png" alt="">
                                 <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <h3><a href="#">Ethan Welch</a></h3>
+                                    <p>General Manager</p>
+                                   
                                 </div>
                              </div>
                         </div>
@@ -111,17 +95,9 @@
                             <div class="team-img">
                                 <img src="assets/img/gallery/team3.png" alt="">
                                 <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <h3><a href="#">Ryan Hammer</a></h3>
+                                    <p>Chief Marketing Officer</p>
+                                    
                                 </div>
                              </div>
                         </div>

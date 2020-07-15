@@ -23,10 +23,7 @@
                             <div class="footer-tittle">
                                 <h4>COMPANY</h4>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Company</a></li>
-                                    <li><a href="#"> Press & Blog</a></li>
-                                    <li><a href="#"> Privacy Policy</a></li>
+                                    <li><a href="about.php">About Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -34,7 +31,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Open hour</h4>
+                                <h4>Open hours</h4>
                                 <ul>
                                     <li><a href="#">Monday-Saturday 8am-6pm</a></li>
                                     <li><a href="#"> Sunday (closed)</a></li>
@@ -42,20 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>RESOURCES</h4>
-                                <ul>
-                                    <li><a href="#">Home Insurance</a></li>
-                                    <li><a href="#">Travel Insurance</a></li>
-                                    <li><a href="#"> Car Insurance</a></li>
-                                    <li><a href="#"> Business Insurance</a></li>
-                                    <li><a href="#"> Heal Insurance</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <!-- logo -->
@@ -64,16 +48,10 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p class="info1">We have always been revolutionizing, shaping, and simplifying the world of logistics. From inventing the international air express industry to becoming the world’s leading logistics company; we’re thinkers, makers and pioneers that constantly challenge what’s possible. And now we’re tackling the ultimate border: delivering to the moon.</p>
+                                    <p class="info1">We are an international team of over 3,800 shipping professionals, united by a passion for logistics. And we work in a unique environment. PCSCS is as innovative as a start-up, with the power of an international organization.</p>
                                 </div>
                             </div>
-                            <!-- Footer Social -->
-                            <div class="footer-social ">
-                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
