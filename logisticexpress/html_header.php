@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$link = mysqli_connect('localhost', 'root', '', 'pentagon');
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -47,6 +51,13 @@
                                 <ul>     
                                     <li>Phone: +1 (101) 392 7924</li>
                                     <li><a href="mailto:support@pentagoncargoshippingcourierservice.com">Email: support@pentagoncargoshippingcourierservice.com</a></li>
+                                <?php
+                                    if (isset($_SESSION['username'])) {
+                                        echo "<li><b style='color: white;'>Welcome back, ".$_SESSION['username']."</b></li>";
+                                        echo "<li><a href='logout.php'> Logout </a></li>";
+                                    }
+                                ?>
+                                    
                                 </ul>
                             </div>
                             
@@ -74,6 +85,9 @@
                                             <li><a href="track.php">Track</a></li>
                                             <li><a href="services.php">Services</a></li>
                                             <li><a href="contact.php">Contact</a></li>
+                                            <?php if (isset($_SESSION['username'])) : ?>
+                                                <li><a href="dashboard.php">Dashboard</a></li>
+                                            <?php endif; ?>
                                         </ul>
                                     </nav>
                                 </div>

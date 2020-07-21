@@ -11,7 +11,7 @@
                                 <h2>We Understand The Importance Approaching Each Work!</h2>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4">
+                        <div class="col-xl-6 col-lg-4 col-md-4">
                             <span class="contact-number f-right">+1 (101) 392 7924</span>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                             <div class="footer-tittle">
                                 <h4>Open hours</h4>
                                 <ul>
-                                    <li><a href="#">Monday-Saturday 8am-6pm</a></li>
+                                    <li><a href="#">Monday-Saturday 8am - 6pm</a></li>
                                     <li><a href="#"> Sunday (closed)</a></li>
                                 </ul>
                             </div>
@@ -44,7 +44,7 @@
                         <div class="single-footer-caption mb-50">
                             <!-- logo -->
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                <a href="/"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
@@ -100,6 +100,7 @@
     <script src="./assets/js/jquery.sticky.js"></script>
     
     <!-- contact js -->
+    <script src="./assets/js/login.js"></script>
     <script src="./assets/js/contact.js"></script>
     <script src="./assets/js/jquery.form.js"></script>
     <script src="./assets/js/jquery.validate.min.js"></script>

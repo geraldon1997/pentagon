@@ -1,4 +1,4 @@
-<?php require_once 'header.php'; ?>
+<?php require_once 'html_header.php'; ?>
     <main>
         <!--? slider Area Start-->
         <div class="slider-area ">
@@ -11,7 +11,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">About</a></li> 
+                                        <li class="breadcrumb-item"><a href="about.php">About</a></li> 
                                     </ol>
                                 </nav>
                             </div>

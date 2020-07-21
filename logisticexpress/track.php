@@ -1,4 +1,4 @@
-<?php require_once 'header.php'; ?>
+<?php require_once 'html_header.php'; ?>
 <main>
     <!--? slider Area Start-->
     <div class="slider-area ">
@@ -9,20 +9,20 @@
                     <div class="row">
                         <div class="col-xl-9 col-lg-9">
                             <div class="hero__caption">
-                                <h1 >Safe & Reliable <span>Logistic</span> Solutions!</h1>
+                                <h1 >Track <span>Shipments</span></h1>
                             </div>
                             <!--Hero form -->
-                            <form action="#" class="search-box">
+                            <form class="search-box" method="post">
                                 <div class="input-form">
-                                    <input type="text" placeholder="Your Tracking ID">
+                                    <input type="text" name="id" placeholder="Your Tracking ID">
                                 </div>
                                 <div class="search-form">
-                                    <a href="#">Track & Trace</a>
+                                    <a href="track.php">Track & Trace</a>
                                 </div>	
                             </form>	
                             <!-- Hero Pera -->
                             <div class="hero-pera">
-                                <p>For order status inquiry</p>
+                                <p>For shipment status inquiry</p>
                             </div>
                         </div>
                     </div>

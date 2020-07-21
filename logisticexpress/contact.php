@@ -1,4 +1,9 @@
-<?php require_once 'header.php'; ?>
+<?php require_once 'html_header.php'; ?>
+<?php 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_once 'contact_process.php';
+}
+?>
     <main>
         <!--? slider Area Start-->
         <div class="slider-area ">
@@ -10,8 +15,8 @@
                                 <h2>Contact Us</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Contact</a></li> 
+                                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="contact.php">Contact</a></li> 
                                     </ol>
                                 </nav>
                             </div>
@@ -30,7 +35,7 @@
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" method="post" id="contactForm" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
@@ -58,7 +63,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-lg-3 offset-lg-1">
+                    <div class="col-lg-4">
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
