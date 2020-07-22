@@ -13,7 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $lo = $_POST['lo'];
     $st = $_POST['st'];
     $dd = $_POST['dd'];
+    $dt = $_POST['dt'];
     $ad = $_POST['ad'];
+    $at = $_POST['at'];
 
     $query = "UPDATE `shipments` SET 
         `sender` = '$se',
@@ -25,7 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         `location` = '$lo',
         `status` = '$st',
         `ddate` = '$dd',
-        `adate` = '$ad' WHERE `id` = '$id'
+        `dtime` = '$dt',
+        `adate` = '$ad',
+        `atime` = '$at' WHERE `id` = '$id'
         ";
 
     mysqli_query($link, $query);
@@ -82,7 +86,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <th>Location of shipment</th>
                     <th>Status</th>
                     <th>date of departure</th>
+                    <th>time of departure</th>
                     <th>date of arrival</th>
+                    <th>time of arrival</th>
                     <th>Action</th>
 
                     <?php
@@ -101,7 +107,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $lo = $shipment['location'];
                         $st = $shipment['status'];
                         $dd = $shipment['ddate'];
+                        $dt = $shipment['dtime'];
                         $ad = $shipment['adate'];
+                        $at = $shipment['atime'];
 
                         echo "<tr>";
                         echo "<td>".$sn++."</td>";
@@ -117,7 +125,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         echo "<td><input name='lo' value='$lo'></td>";
                         echo "<td><input name='st' value='$st'></td>";
                         echo "<td><input name='dd' value='$dd'></td>";
+                        echo "<td><input name='dt' value='$dt'></td>";
                         echo "<td><input name='ad' value='$ad'></td>";
+                        echo "<td><input name='at' value='$at'></td>";
                         echo "<td><button class='button btn'>update</button></td>";
                         echo "</form>";
                         echo "</tr>";

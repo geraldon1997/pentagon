@@ -14,7 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $location = $_POST['location'];
         $status = $_POST['status'];
         $ddate = $_POST['ddate'];
+        $dtime = $_POST['dtime'];
         $adate = $_POST['adate'];
+        $atime = $_POST['atime'];
 
         $query = "CREATE TABLE IF NOT EXISTS `shipments` (
             `id` INT PRIMARY KEY AUTO_INCREMENT,
@@ -28,15 +30,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             `location` VARCHAR(100),
             `status` VARCHAR(100),
             `ddate` VARCHAR(20),
-            `adate` VARCHAR(20)
+            `dtime` VARCHAR(20),
+            `adate` VARCHAR(20),
+            `atime` VARCHAR(20)
         ) ";
 
         mysqli_query($link, $query);
         
         $sql = "INSERT INTO `shipments` (
-                `trackingid`,`sender`,`receiver`,`senderaddr`,`receiveraddr`,`nature`,`goods`,`location`,`status`,`ddate`,`adate`
+                `trackingid`,`sender`,`receiver`,`senderaddr`,`receiveraddr`,`nature`,`goods`,`location`,`status`,`ddate`,`dtime`,`adate`,`atime`
             ) VALUES (
-                '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$nature','$goods','$location','$status','$ddate','$adate'
+                '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$nature','$goods','$location','$status','$ddate','$dtime','$adate','$atime'
             )";
 
         mysqli_query($link, $sql);
@@ -114,10 +118,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                                         <input class="form-control" name="ddate" id="date" type="date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date of Departure'" placeholder="Date of Departure" title="Date of Departure">
                                     </div>
                                 </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="dtime" id="date" type="time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time of Departure'" placeholder="Time of Departure" title="Time of Departure">
+                                    </div>
+                                </div>
                                 
                                 <div class="col-12">
                                     <div class="form-group">
                                         <input class="form-control" name="adate" id="date" type="date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date of Arrival'" placeholder="Date of Arrival" title="Date of Arrival">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="atime" id="date" type="time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time of Arrival'" placeholder="Time of Arrival" title="Time of Arrival">
                                     </div>
                                 </div>
                             

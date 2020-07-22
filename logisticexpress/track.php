@@ -30,7 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <th>Location of shipment</th>
                             <th>Status</th>
                             <th>date of departure</th>
+                            <th>time of departure</th>
                             <th>date of arrival</th>
+                            <th>time of arrival</th>
                             <tr>
                             <td>$shipment->trackingid</td>
                             <td>$shipment->sender</td>
@@ -42,9 +44,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <td>$shipment->location</td>
                             <td>$shipment->status</td>
                             <td>$shipment->ddate</td>
+                            <td>$shipment->dtime</td>
                             <td>$shipment->adate</td>
+                            <td>$shipment->atime</td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class='row'>
+                    <div class='col-12 text-center'>
+                        <div class='mapouter'>
+                            <div class='gmap_canvas'>
+                                <iframe id='gmap_canvas' src='https://maps.google.com/maps?q=$shipment->location&t=k&z=13&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
+                            </div>
+                            <style>
+                            iframe{
+                                width:100%;
+                                height:500px;
+                            }
+                            .mapouter{
+                                position:relative;
+                                text-align:right;
+                                height:500px;
+                                width:100%;
+                            }
+                            .gmap_canvas {
+                                overflow:hidden;
+                                background:none!important;
+                                height:500px;
+                                width:100%;
+                            }
+                            </style>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,6 +156,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!-- ================ shipment section start ================= -->
 <?php if (isset($data)) :echo $data; endif; ?>
+
+
 <!-- ================ shipment section end ================= -->
 
 </main>

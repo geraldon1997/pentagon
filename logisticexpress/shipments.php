@@ -45,7 +45,9 @@
                     <th>Location of shipment</th>
                     <th>Status</th>
                     <th>date of departure</th>
+                    <th>time of departure</th>
                     <th>date of arrival</th>
+                    <th>time of arrival</th>
 
                     <?php
                     $sql = "SELECT * FROM `shipments` ORDER BY `id` DESC";
@@ -62,7 +64,9 @@
                         $lo = $shipment['location'];
                         $st = $shipment['status'];
                         $dd = $shipment['ddate'];
+                        $dt = $shipment['dtime'];
                         $ad = $shipment['adate'];
+                        $at = $shipment['atime'];
 
                         echo "<tr>";
                         echo "<td>".$sn++."</td>";
@@ -76,7 +80,9 @@
                         echo "<td>$lo</td>";
                         echo "<td>$st</td>";
                         echo "<td>$dd</td>";
+                        echo "<td>$dt</td>";
                         echo "<td>$ad</td>";
+                        echo "<td>$at</td>";
                         echo "</tr>";
                     }
                     ?>
