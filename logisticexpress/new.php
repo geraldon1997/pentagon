@@ -32,9 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         mysqli_query($link, $query);
         
         $sql = "INSERT INTO `shipments` (
-                `trackingid`,`sender`,`receiver`,`senderaddr`,`receiveraddr`,`location`,`status`,`ddate`,`adate`
+                `trackingid`,`sender`,`receiver`,`senderaddr`,`receiveraddr`,`goods`,`location`,`status`,`ddate`,`adate`
             ) VALUES (
-                '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$location','$status','$ddate','$adate'
+                '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$goods','$location','$status','$ddate','$adate'
             )";
 
         mysqli_query($link, $sql);

@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $re = $_POST['re'];
     $sa = $_POST['sa'];
     $ra = $_POST['ra'];
+    $go = $_POST['go'];
     $lo = $_POST['lo'];
     $st = $_POST['st'];
     $dd = $_POST['dd'];
@@ -17,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         `receiver` = '$re',
         `senderaddr` = '$sa',
         `receiveraddr` = '$ra',
+        `goods` = '$go',
         `location` = '$lo',
         `status` = '$st',
         `ddate` = '$dd',
@@ -64,6 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <th>Receiver's name</th>
                     <th>Sender's address</th>
                     <th>Receiver's address</th>
+                    <th>Goods in Kg</th>
                     <th>Location of shipment</th>
                     <th>Status</th>
                     <th>date of departure</th>
@@ -81,6 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $re = $shipment['receiver'];
                         $sa = $shipment['senderaddr'];
                         $ra = $shipment['receiveraddr'];
+                        $go = $shipment['goods'];
                         $lo = $shipment['location'];
                         $st = $shipment['status'];
                         $dd = $shipment['ddate'];
@@ -95,6 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         echo "<td><input name='re' value='$re'></td>";
                         echo "<td><input name='sa' value='$sa'></td>";
                         echo "<td><input name='ra' value='$ra'></td>";
+                        echo "<td><input name='go' value='$go'></td>";
                         echo "<td><input name='lo' value='$lo'></td>";
                         echo "<td><input name='st' value='$st'></td>";
                         echo "<td><input name='dd' value='$dd'></td>";
