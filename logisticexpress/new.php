@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $receiver = $_POST['receiver'];
         $senderaddr = $_POST['senderaddress'];
         $receiveraddr = $_POST['receiveraddress'];
+        $nature = $_POST['nature'];
         $goods = $_POST['goods'];
         $location = $_POST['location'];
         $status = $_POST['status'];
@@ -22,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             `receiver` VARCHAR(40),
             `senderaddr` VARCHAR(255),
             `receiveraddr` VARCHAR(255),
+            `nature` VARCHAR(255),
             `goods` VARCHAR(100),
             `location` VARCHAR(100),
             `status` VARCHAR(100),
@@ -32,9 +34,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         mysqli_query($link, $query);
         
         $sql = "INSERT INTO `shipments` (
-                `trackingid`,`sender`,`receiver`,`senderaddr`,`receiveraddr`,`goods`,`location`,`status`,`ddate`,`adate`
+                `trackingid`,`sender`,`receiver`,`senderaddr`,`receiveraddr`,`nature`,`goods`,`location`,`status`,`ddate`,`adate`
             ) VALUES (
-                '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$goods','$location','$status','$ddate','$adate'
+                '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$nature','$goods','$location','$status','$ddate','$adate'
             )";
 
         mysqli_query($link, $sql);
@@ -85,7 +87,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="goods" id="sender\'s name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter goods weight in kg'" placeholder="Enter goods weight in kg">
+                                        <input class="form-control valid" name="nature" id="nature" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter nature of goods'" placeholder="Enter nature of goods">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="goods" id="goods" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter goods weight in kg'" placeholder="Enter goods weight in kg">
                                     </div>
                                 </div>
                                 

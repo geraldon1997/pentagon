@@ -2,11 +2,13 @@
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     $id = $_POST['id'];
     $se = $_POST['se'];
     $re = $_POST['re'];
     $sa = $_POST['sa'];
     $ra = $_POST['ra'];
+    $na = $_POST['na'];
     $go = $_POST['go'];
     $lo = $_POST['lo'];
     $st = $_POST['st'];
@@ -18,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         `receiver` = '$re',
         `senderaddr` = '$sa',
         `receiveraddr` = '$ra',
+        `nature` = '$na',
         `goods` = '$go',
         `location` = '$lo',
         `status` = '$st',
@@ -26,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ";
 
     mysqli_query($link, $query);
+
 }
 ?>
 
@@ -47,16 +51,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         padding: 5px;
     }
 </style>
+
 <!-- ================ shipment section start ================= -->
+
 <section class="contact-section">
+
     <?php require_once 'menu.php'; ?>
+
     <hr>
+
     <div class="container">
+
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="contact-title">Edit Shipment</h2>
             </div>
         </div>
+
         <div class="row">
             <div class="col-12 text-center">
                 <table border="1">
@@ -66,6 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <th>Receiver's name</th>
                     <th>Sender's address</th>
                     <th>Receiver's address</th>
+                    <th>Nature of goods</th>
                     <th>Goods in Kg</th>
                     <th>Location of shipment</th>
                     <th>Status</th>
@@ -84,6 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $re = $shipment['receiver'];
                         $sa = $shipment['senderaddr'];
                         $ra = $shipment['receiveraddr'];
+                        $na = $shipment['nature'];
                         $go = $shipment['goods'];
                         $lo = $shipment['location'];
                         $st = $shipment['status'];
@@ -99,6 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         echo "<td><input name='re' value='$re'></td>";
                         echo "<td><input name='sa' value='$sa'></td>";
                         echo "<td><input name='ra' value='$ra'></td>";
+                        echo "<td><input name='na' value='$na'></td>";
                         echo "<td><input name='go' value='$go'></td>";
                         echo "<td><input name='lo' value='$lo'></td>";
                         echo "<td><input name='st' value='$st'></td>";
@@ -114,8 +128,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             
         </div>
+
     </div>
+    
 </section>
-        <!-- ================ shipment section end ================= -->
+
+<!-- ================ shipment section end ================= -->
 
 <?php require_once 'footer.php'; ?>
