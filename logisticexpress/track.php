@@ -1,4 +1,10 @@
 <?php require_once 'html_header.php'; ?>
+<style>
+    .search-form button{
+        border: none;
+        cursor: pointer;
+    }
+</style>
 <main>
     <!--? slider Area Start-->
     <div class="slider-area ">
@@ -14,10 +20,10 @@
                             <!--Hero form -->
                             <form class="search-box" method="post">
                                 <div class="input-form">
-                                    <input type="text" name="id" placeholder="Your Tracking ID">
+                                    <input type="text" name="trackingid" placeholder="Your Tracking ID">
                                 </div>
                                 <div class="search-form">
-                                    <a href="track.php">Track & Trace</a>
+                                    <button>Track & Trace</button>
                                 </div>	
                             </form>	
                             <!-- Hero Pera -->

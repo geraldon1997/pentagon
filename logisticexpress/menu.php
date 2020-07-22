@@ -10,7 +10,7 @@
                     </div>
 
                     <div class="col-4">
-                        <a href="view.php" class="button boxed-btn">View Shipments</a>
+                        <a href="shipments.php" class="button boxed-btn">View Shipments</a>
                     </div>
     
                 </div>

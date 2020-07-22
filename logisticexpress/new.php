@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $receiver = $_POST['receiver'];
         $senderaddr = $_POST['senderaddress'];
         $receiveraddr = $_POST['receiveraddress'];
+        $goods = $_POST['goods'];
         $location = $_POST['location'];
         $status = $_POST['status'];
         $ddate = $_POST['ddate'];
@@ -21,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             `receiver` VARCHAR(40),
             `senderaddr` VARCHAR(255),
             `receiveraddr` VARCHAR(255),
+            `goods` VARCHAR(100),
             `location` VARCHAR(100),
             `status` VARCHAR(100),
             `ddate` VARCHAR(20),
@@ -34,6 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             ) VALUES (
                 '$trackingid','$sender','$receiver','$senderaddr','$receiveraddr','$location','$status','$ddate','$adate'
             )";
+
+        mysqli_query($link, $sql);
+        echo "<script>window.location = 'shipments.php'</script>";
     }
 }
 ?>
