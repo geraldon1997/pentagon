@@ -40,6 +40,7 @@
                     <th>Receiver's name</th>
                     <th>Sender's address</th>
                     <th>Receiver's address</th>
+                    <th>Goods in kg</th>
                     <th>Location of shipment</th>
                     <th>Status</th>
                     <th>date of departure</th>
@@ -55,6 +56,7 @@
                         $re = $shipment['receiver'];
                         $sa = $shipment['senderaddr'];
                         $ra = $shipment['receiveraddr'];
+                        $go = $shipment['goods'];
                         $lo = $shipment['location'];
                         $st = $shipment['status'];
                         $dd = $shipment['ddate'];
@@ -67,6 +69,7 @@
                         echo "<td>$re</td>";
                         echo "<td>$sa</td>";
                         echo "<td>$ra</td>";
+                        echo "<td>$go</td>";
                         echo "<td>$lo</td>";
                         echo "<td>$st</td>";
                         echo "<td>$dd</td>";
