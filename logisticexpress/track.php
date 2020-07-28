@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <hr>
                 
-                <!-- <div class='row'>
+                <div class='row'>
                     <div class='col-12 text-center'>
                         <div class='mapouter'>
                             <div class='gmap_canvas'>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </div>
                 </div>
--->
+
             </div>
         
         </section>";
